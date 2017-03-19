@@ -39,9 +39,7 @@ n=2
 result_dict = defaultdict(int)
 while n<=20:
     factors = find_all_prime_divisors(n)
-    print factors
     result_dict = merge_factors(result_dict,factors)
-    print n, result_dict
     n += 1
 
 result = 1
